@@ -26,7 +26,7 @@ Fresh-Cart solves this using autonomous agents that think, remember, and act.
 
 
 
- 🤖 Multi-Agent System
+## 🤖 Multi-Agent System
 
 Fresh-Cart is powered by three specialized agents
 
@@ -39,7 +39,7 @@ Fresh-Cart is powered by three specialized agents
 
 
 
-2️⃣ Memory Agent
+## 2️⃣ Memory Agent
 
 * Maintains both semantic + structured memory
 * Converts vague queries into real product data
@@ -47,13 +47,13 @@ Fresh-Cart is powered by three specialized agents
 
 
 
-3️⃣ Checkout Agent
+## 3️⃣ Checkout Agent
 
 * Optimizes the final cart
 * Combines best prices across shops
 * Produces the lowest-cost purchase plan**
 
-🔄 End-to-End Workflow
+## 🔄 End-to-End Workflow
 
  Step 1: Receive Vague User Prompt
 
@@ -63,9 +63,9 @@ Orchestrator Agent
 * Detects ambiguity
 * Initiates intelligent workflow
 
- 🔵 Step 2: Execute Semantic RAG
+ ## 🔵 Step 2: Execute Semantic RAG
 
-Memory Agent (L1 Cache - Vector Memory)
+## Memory Agent (L1 Cache - Vector Memory)
 
 * Performs semantic search using vector database
 * Maps vague intent → actual items:
@@ -79,9 +79,9 @@ KAG_004 → Cheddar
 
 
 
- 🟡 Step 3: Query Facts & Verify Time
+ ## 🟡 Step 3: Query Facts & Verify Time
 
-Memory Agent (L2 Cache - SQLite Memory)
+## Memory Agent (L2 Cache - SQLite Memory)
 
 * Executes structured SQL queries:
 
@@ -103,7 +103,7 @@ LIMIT 1;
 
 
 
- 🔴 Step 4: Perform Agentic Checkout
+ ## 🔴 Step 4: Perform Agentic Checkout
 
 Checkout Agent (via Orchestrator)**
 
@@ -120,7 +120,7 @@ Produces minimum total cost cart
 
 
 
- 🟣 Step 5: Final Output
+ ## 🟣 Step 5: Final Output
 
 * Displays optimized cart
 * Provides reasoning
@@ -137,14 +137,14 @@ Fresh-Cart doesn’t just fetch data — it **questions it**.
 System flags:
 
 
-⚠️ Price anomaly detected
+## ⚠️ Price anomaly detected
 
 
 Instead of blindly trusting it.
 
 
 
- 🏗️ System Architecture
+ ## 🏗️ System Architecture
 
 ```
 User Input
@@ -160,7 +160,7 @@ Checkout Agent
 Optimized Cart + Explanation
 ```
 
- 📂 Project Structure
+ ## 📂 Project Structure
 
 ```
 memory_agent/
@@ -183,19 +183,19 @@ memory_agent/
 
 
 
-⚙️ Tech Stack
-🧠 AI & Agents
+## ⚙️ Tech Stack
+## 🧠 AI & Agents
 
 * Google Gemini API
 * LangGraph (workflow orchestration)
 * RAG (Retrieval Augmented Generation)
 
- 🗄️ Data Layer
+## 🗄️ Data Layer
 
 * SQLite (structured memory)
 * ChromaDB (vector memory)
 
-🧩 Backend
+## 🧩 Backend
 
 * Python
 * FastAPI (optional integration)
@@ -204,6 +204,6 @@ memory_agent/
 
 
 
- Conclusion
+ ## Conclusion
 
 Fresh-Cart redefines online shopping by introducing:
